@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taxi Sprint - Betrouwbare taxi service met luxe Tesla's. 24/7 beschikbaar, vaste tarieven, professionele chauffeurs.">
+    <title>Taxi Sprint | Slim, Snel & Stijlvol Vervoer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-taxi logo-icon"></i>
+                    <span>Taxi<span class="highlight">Sprint</span></span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/luchthaven.html"><i class="fas fa-plane"></i> Luchthaven Vervoer</a></li>
+                            <li><a href="pages/zakelijk.html"><i class="fas fa-briefcase"></i> Zakelijk Vervoer</a></li>
+                            <li><a href="pages/duurzaam.html"><i class="fas fa-leaf"></i> Duurzaam Vervoer</a></li>
+                            <li><a href="pages/prive.html"><i class="fas fa-user"></i> Privé Vervoer</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#tarieven">Tarieven</a></li>
+                    <li><a href="#werkwijze">Hoe het werkt</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#contact" class="btn btn-primary nav-cta">
+                        <i class="fas fa-calendar-check"></i> Boek nu
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="logo">
+                <i class="fas fa-taxi logo-icon"></i>
+                <span>Taxi<span class="highlight">Sprint</span></span>
+            </a>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li>
+                <button class="mobile-dropdown-toggle" id="mobileDropdownToggle">
+                    Services <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="mobile-dropdown-menu" id="mobileDropdownMenu">
+                    <li><a href="pages/luchthaven.html"><i class="fas fa-plane"></i> Luchthaven Vervoer</a></li>
+                    <li><a href="pages/zakelijk.html"><i class="fas fa-briefcase"></i> Zakelijk Vervoer</a></li>
+                    <li><a href="pages/duurzaam.html"><i class="fas fa-leaf"></i> Duurzaam Vervoer</a></li>
+                    <li><a href="pages/prive.html"><i class="fas fa-user"></i> Privé Vervoer</a></li>
+                </ul>
+            </li>
+            <li><a href="#tarieven"><i class="fas fa-euro-sign"></i> Tarieven</a></li>
+            <li><a href="#werkwijze"><i class="fas fa-cogs"></i> Hoe het werkt</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="#contact" class="btn btn-primary btn-full">
+                <i class="fas fa-calendar-check"></i> Direct boeken
+            </a>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+    <!-- HERO SECTIE -->
+    <section class="hero-modern">
+        <div class="hero-bg-pattern"></div>
+        <div class="container">
+            <div class="hero-content-modern">
+                <div class="hero-badge-modern">
+                    <i class="fas fa-bolt"></i> 100% Elektrisch & Duurzaam
+                </div>
+                <h1>Slim, Snel & <span class="highlight">Stijlvol</span> Vervoer</h1>
+                <p class="hero-tagline-modern">Ervaar de toekomst van taxi-vervoer met Taxi Sprint. Wij brengen je veilig, comfortabel en milieuvriendelijk naar je bestemming.</p>
+                <div class="hero-buttons-modern">
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i> Direct boeken
+                    </a>
+                    <a href="#services" class="btn btn-secondary btn-large">
+                        <i class="fas fa-info-circle"></i> Ontdek meer
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 beschikbaar</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-euro-sign"></i>
+                        <span>Vaste tarieven</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-car"></i>
+                        <span>Luxe Tesla's</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#services" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- USP SECTION -->
+    <section class="usp-section-modern" id="usp">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Waarom Taxi Sprint</span>
+                <h2>Comfortabel & Professioneel</h2>
+                <p>Bij Taxi Sprint draait alles om jouw gemak</p>
+            </div>
+            <div class="usp-grid">
+                <div class="usp-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Altijd op tijd</h3>
+                        <p>Wij staan bekend om onze punctualiteit</p>
+                    </div>
+                </div>
+                <div class="usp-card">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <h3>24/7 beschikbaar</h3>
+                        <p>Dag en nacht beschikbaar voor ritten</p>
+                    </div>
+                </div>
+                <div class="usp-card">
+                    <i class="fas fa-file-invoice-euro"></i>
+                    <div>
+                        <h3>Vaste tarieven</h3>
+                        <p>Geen verrassingen achteraf</p>
+                    </div>
+                </div>
+                <div class="usp-card">
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                        <h3>100% Elektrisch</h3>
+                        <p>Milieuvriendelijk vervoer</p>
+                    </div>
+                </div>
+                <div class="usp-card">
+                    <i class="fas fa-user-tie"></i>
+                    <div>
+                        <h3>Professioneel</h3>
+                        <p>Ervaren en vriendelijke chauffeurs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Onze Services</span>
+                <h2>Wat wij voor u kunnen doen</h2>
+                <p>Kies de service die bij u past</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Luchthaven Vervoer</h3>
+                        <p>Begin je reis zonder stress. Wij brengen je op tijd naar de luchthaven in luxe en rust.</p>
+                        <a href="pages/luchthaven.html" class="service-link">
+                            Meer info <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Zakelijk Vervoer</h3>
+                        <p>Professioneel vervoer voor zakelijke afspraken. Comfortabel en representatief.</p>
+                        <a href="pages/zakelijk.html" class="service-link">
+                            Meer info <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Duurzaam Vervoer</h3>
+                        <p>Met onze elektrische Tesla's kiezen wij bewust voor een groen alternatief.</p>
+                        <a href="pages/duurzaam.html" class="service-link">
+                            Meer info <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Privé Vervoer</h3>
+                        <p>Comfortabel vervoer voor elke gelegenheid. Op tijd, veilig en stijlvol.</p>
+                        <a href="pages/prive.html" class="service-link">
+                            Meer info <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section" id="werkwijze">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Hoe het werkt</span>
+                <h2>Ons werkwijze</h2>
+                <p>Van aanvraag tot rit in 4 simpele stappen</p>
+            </div>
+            <div class="process-cards">
+                <div class="process-card">
+                    <div class="process-step-num">1</div>
+                    <div class="process-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Aanvraag</h3>
+                    <p>Start met je rit aanvraag via telefoon, WhatsApp of email</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step-num">2</div>
+                    <div class="process-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Bevestiging</h3>
+                    <p>Wij nemen snel contact op om je rit te bevestigen</p>
+                </div>
+                <div class="process-card featured">
+                    <div class="process-step-num">3</div>
+                    <div class="process-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Betaling</h3>
+                    <p>Kies hoe je wilt betalen: contant, pin of vooraf via link</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-step-num">4</div>
+                    <div class="process-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Chauffeur onderweg</h3>
+                    <p>Sit back & relax. Je chauffeur is onderweg!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="pricing-section" id="tarieven">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Tarieven</span>
+                <h2>Transparante prijzen</h2>
+                <p>Geen verborgen kosten, wat je ziet is wat je betaalt</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <i class="fas fa-home"></i>
+                        <h3>Standaard Rit</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">€</span>
+                        <span class="amount">2,95</span>
+                        <span class="per">/km</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Luxe Tesla Model 3</li>
+                        <li><i class="fas fa-check"></i> Professionele chauffeur</li>
+                        <li><i class="fas fa-check"></i> Gratis water & wifi</li>
+                        <li><i class="fas fa-check"></i> Vaste starttarief</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">
+                        <i class="fas fa-calendar-check"></i> Boek nu
+                    </a>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Populair</div>
+                    <div class="pricing-header">
+                        <i class="fas fa-plane"></i>
+                        <h3>Luchthaven</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">€</span>
+                        <span class="amount">89</span>
+                        <span class="per">enkele reis</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Inclusief 30 min wachttijd</li>
+                        <li><i class="fas fa-check"></i> Gratis kinderzitje</li>
+                        <li><i class="fas fa-check"></i> Hulp met bagage</li>
+                        <li><i class="fas fa-check"></i> 24/7 beschikbaar</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">
+                        <i class="fas fa-calendar-check"></i> Boek nu
+                    </a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Zakelijk</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">€</span>
+                        <span class="amount">75</span>
+                        <span class="per">/uur</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Disponibiliteit chauffeur</li>
+                        <li><i class="fas fa-check"></i> Factuur op naam</li>
+                        <li><i class="fas fa-check"></i> Meerdere stops mogelijk</li>
+                        <li><i class="fas fa-check"></i> Business class service</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">
+                        <i class="fas fa-calendar-check"></i> Boek nu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Reviews</span>
+                <h2>Wat onze klanten zeggen</h2>
+                <p>Laat u overtuigen door tevreden klanten</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Eindelijk een taxi die écht op tijd komt! De Tesla was brandschoon en de chauffeur enorm vriendelijk. Zeker voor herhaling vatbaar!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <strong>Sarah Jansen</strong>
+                            <span>Schiphol rit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Gebruik Taxi Sprint regelmatig voor zakelijke afspraken. Altijd professioneel, stipt en comfortabel. Een aanrader!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <strong>Peter de Vries</strong>
+                            <span>Zakelijke klant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Fijn om te weten dat ik met een schone Tesla reis. De chauffeur reed heel rustig en veilig. Tot de volgende keer!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <strong>Maria Bakker</strong>
+                            <span>Privé rit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Klaar om te boeken?</h2>
+                <p>Neem vandaag nog contact op. Wij zijn 24/7 bereikbaar voor je rit!</p>
+                <div class="contact-methods">
+                    <a href="tel:+31612345678" class="contact-btn phone">
+                        <i class="fas fa-phone"></i> 06-12345678
+                    </a>
+                    <a href="https://wa.me/31612345678" class="contact-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:info@taxisprint.nl" class="contact-btn email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+                <div class="contact-info-box">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>24 uur per dag, 7 dagen per week</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Regio Amsterdam & omstreken</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Snelle reservering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-taxi logo-icon"></i>
+                        <span>Taxi<span class="highlight">Sprint</span></span>
+                    </a>
+                    <p>Slim, Snel & Stijlvol Vervoer. De toekomst van taxi-vervoer met luxe Tesla's.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="pages/luchthaven.html">Luchthaven Vervoer</a></li>
+                        <li><a href="pages/zakelijk.html">Zakelijk Vervoer</a></li>
+                        <li><a href="pages/duurzaam.html">Duurzaam Vervoer</a></li>
+                        <li><a href="pages/prive.html">Privé Vervoer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#tarieven">Tarieven</a></li>
+                        <li><a href="#werkwijze">Hoe het werkt</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 06-12345678</li>
+                        <li><i class="fas fa-envelope"></i> info@taxisprint.nl</li>
+                        <li><i class="fas fa-clock"></i> 24/7 beschikbaar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Taxi Sprint. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/31612345678" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
