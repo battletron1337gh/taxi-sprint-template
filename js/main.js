@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScroll();
     initHeaderScroll();
     initScrollAnimations();
+    initBookingForm();
 });
 
 /**
@@ -129,4 +130,40 @@ function initScrollAnimations() {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
+}
+
+/**
+ * Booking Form Handler
+ */
+function initBookingForm() {
+    const form = document.getElementById('bookingForm');
+    if (!form) return;
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        // Simple validation
+        if (!data.voornaam || !data.achternaam || !data.telefoon || !data.email || 
+            !data.datum || !data.vertrek || !data.aankomst || !data.personen || !data.bagage) {
+            alert('Vul alstublieft alle verplichte velden in.');
+            return;
+        }
+        
+        // Show success message
+        alert('Bedankt voor uw aanvraag! Wij nemen binnen 30 minuten contact met u op.');
+        
+        // Reset form
+        form.reset();
+    });
+    
+    // Set minimum date to today
+    const dateInput = document.getElementById('datum');
+    if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+    }
 }

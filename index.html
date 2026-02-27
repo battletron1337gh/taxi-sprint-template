@@ -423,12 +423,128 @@
         </div>
     </section>
 
+    <!-- BOOKING FORM SECTION -->
+    <section class="booking-section" id="boeken">
+        <div class="container">
+            <div class="section-header-modern light">
+                <span class="section-tag">Ritaanvraag</span>
+                <h2>Direct een rit boeken</h2>
+                <p>Vul het formulier in en wij nemen binnen 30 minuten contact met u op</p>
+            </div>
+            
+            <div class="booking-form-container">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="voornaam">Voornaam <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="voornaam" name="voornaam" placeholder="Uw voornaam" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="achternaam">Achternaam <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="achternaam" name="achternaam" placeholder="Uw achternaam" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefoon">Telefoon <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="telefoon" name="telefoon" placeholder="06-12345678" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Adres <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="uw@email.nl" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="datum">Ophaal Datum <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-calendar-alt"></i>
+                            <input type="date" id="datum" name="datum" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vertrek">Vertrek Adres <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" id="vertrek" name="vertrek" placeholder="Straat, huisnummer, plaats" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="aankomst">Aankomst Adres <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-flag-checkered"></i>
+                                <input type="text" id="aankomst" name="aankomst" placeholder="Straat, huisnummer, plaats" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="personen">Aantal Personen <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-users"></i>
+                                <select id="personen" name="personen" required>
+                                    <option value="">Kies aantal</option>
+                                    <option value="1">1 persoon</option>
+                                    <option value="2">2 personen</option>
+                                    <option value="3">3 personen</option>
+                                    <option value="4">4 personen</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bagage">Bagage <span class="required">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-suitcase"></i>
+                                <select id="bagage" name="bagage" required>
+                                    <option value="">Kies hoeveelheid</option>
+                                    <option value="geen">Geen bagage</option>
+                                    <option value="handbagage">Alleen handbagage</option>
+                                    <option value="1-2">1-2 koffers</option>
+                                    <option value="3-4">3-4 koffers</option>
+                                    <option value="5+">5+ koffers</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="opmerkingen">Extra Omschrijving</label>
+                        <div class="input-wrapper textarea-wrapper">
+                            <i class="fas fa-comment-alt"></i>
+                            <textarea id="opmerkingen" name="opmerkingen" rows="4" placeholder="Bijzonderheden, extra wensen, etc."></textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">
+                        <i class="fas fa-paper-plane"></i> Rit aanvragen
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACT SECTION -->
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-content">
-                <h2>Klaar om te boeken?</h2>
-                <p>Neem vandaag nog contact op. Wij zijn 24/7 bereikbaar voor je rit!</p>
+                <h2>Liever bellen of WhatsAppen?</h2>
+                <p>We zijn 24/7 bereikbaar voor je vragen of directe boekingen!</p>
                 <div class="contact-methods">
                     <a href="tel:+31612345678" class="contact-btn phone">
                         <i class="fas fa-phone"></i> 06-12345678
