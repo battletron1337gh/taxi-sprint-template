@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a2e;
+            margin: 0;
+            gap: 50px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .logo-option {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            border: 2px solid rgba(0,217,255,0.3);
+        }
+        h2 {
+            color: white;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        /* Option 1: FontAwesome with Badge */
+        .logo-fa {
+            font-size: 80px;
+            color: #00d9ff;
+            position: relative;
+            display: inline-block;
+        }
+        .logo-fa .bolt {
+            position: absolute;
+            bottom: -10px;
+            right: -20px;
+            font-size: 40px;
+            color: #00d9ff;
+            background: #1a1a2e;
+            border-radius: 50%;
+            padding: 5px;
+            border: 3px solid #00d9ff;
+        }
+        
+        /* Option 2: Text Logo */
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-text .taxi {
+            font-size: 60px;
+        }
+        .logo-text .sprint {
+            color: #00d9ff;
+        }
+        .logo-text .bolt-inline {
+            color: #00d9ff;
+            font-size: 40px;
+        }
+        
+        /* Option 3: SVG Logo */
+        .logo-svg {
+            width: 200px;
+            height: 120px;
+        }
+        
+        p.description {
+            color: #94a3b8;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            font-size: 14px;
+            max-width: 250px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Option 1: FontAwesome with Badge -->
+    <div class="logo-option">
+        <h2>Optie 1: FontAwesome + Badge</h2>
+        <div class="logo-fa">
+            <i class="fas fa-taxi"></i>
+            <i class="fas fa-bolt bolt"></i>
+        </div>
+        <p class="description">Taxi icoon met elektrische bolt als badge rechtsonder</p>
+    </div>
+    
+    <!-- Option 2: Text Logo -->
+    <div class="logo-option">
+        <h2>Optie 2: Text Logo + Bolt</h2>
+        <div class="logo-text">
+            <i class="fas fa-taxi taxi"></i>
+            Taxi<span class="sprint">Sprint</span>
+            <i class="fas fa-bolt bolt-inline"></i>
+        </div>
+        <p class="description">Text-based logo met taxi icoon en bolt</p>
+    </div>
+    
+    <!-- Option 3: SVG Logo -->
+    <div class="logo-option">
+        <h2>Optie 3: Custom SVG</h2>
+        <svg class="logo-svg" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <!-- Car silhouette -->
+            <path d="M20 70 L20 50 L40 50 L50 35 L110 35 L120 50 L160 50 L170 60 L170 80 L160 85 L20 85 Z" 
+                  fill="#00d9ff" opacity="0.9"/>
+            <!-- Windows -->
+            <path d="M55 40 L105 40 L115 50 L50 50 Z" fill="#1a1a2e"/>
+            <!-- Wheels -->
+            <circle cx="45" cy="85" r="12" fill="#1a1a2e"/>
+            <circle cx="145" cy="85" r="12" fill="#1a1a2e"/>
+            <circle cx="45" cy="85" r="6" fill="#00d9ff"/>
+            <circle cx="145" cy="85" r="6" fill="#00d9ff"/>
+            <!-- Lightning bolt -->
+            <path d="M150 20 L165 20 L155 35 L170 35 L140 55 L148 38 L135 38 Z" 
+                  fill="#ffd700" stroke="#00d9ff" stroke-width="2"/>
+            <!-- Text -->
+            <text x="100" y="105" font-family="Montserrat, Arial" font-size="16" font-weight="800" 
+                  fill="white" text-anchor="middle">TAXI SPRINT</text>
+        </svg>
+        <p class="description">Custom SVG logo met auto silhouet en bliksem</p>
+    </div>
+</body>
+</html>
